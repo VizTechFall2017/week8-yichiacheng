@@ -10,12 +10,10 @@ var svg = d3.select('svg')
 
 
 //import the data from the .csv file
-d3.json('./cb_2016_us_state_20m.json', function(dataIn){
-    console.log(dataIn);
+d3.csv('./incomeData.csv', function(dataIn){
 
 
-
-  });
+});
 
 
 
