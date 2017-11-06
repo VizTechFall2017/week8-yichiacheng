@@ -17,7 +17,6 @@ var albersProjection = d3.geoAlbersUsa()  //tell it which projection to use
 path = d3.geoPath()
     .projection(albersProjection);        //tell it to use the projection that we just made to convert lat/long to pixels
 
-
 //import the data from the .csv file
 d3.json('./cb_2016_us_state_20m.json', function(dataIn){
 

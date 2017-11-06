@@ -27,8 +27,9 @@ svg.append("g")
 //Tell the function how to calculate x and y positions for each point, using your scale functions and the values stored in the data
 //(it doesn't matter that the data hasn't loaded yet, because this function won't run until you call it, and then it will
 //use the data that you pass it using d3)
-var makeLine = d3.line()
+var makeArea = d3.area()
     .x(function(d) { console.log(d); return scaleX(d.age); })
+    y0((scaleY(0)))
     .y(function(d) { return scaleY(d.total); });
 
 

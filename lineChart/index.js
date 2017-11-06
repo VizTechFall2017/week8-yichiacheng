@@ -22,6 +22,9 @@ svg.append("g")
 svg.append("g")
     .call(d3.axisLeft(scaleY));
 
+var makeLine = d3.line()
+    .x(function(d) { return scaleX(d.age); })
+    .y(function(d) { return scaleY(d.total); });
 
 
 //import the data from the .csv file
@@ -56,6 +59,14 @@ d3.csv('./incomeData.csv', function(dataIn){
         .attr('r',5)
         .attr('fill','blue')
 
+    svg.append("path")
+
+        .datum(dataIn)
+        .attr("class", "line")
+        .attr("d", makeLine)
+        .attr('fill','none')
+        .attr('stroke','black')
+        .attr('stroke-width',2);
 
 });
 

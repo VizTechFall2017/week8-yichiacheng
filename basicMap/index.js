@@ -1,17 +1,60 @@
-var width = d3.select('svg').attr('width');
-var height = d3.select('svg').attr('height');
+var width = document.getElementById('svg1').clientWidth;
+var height = document.getElementById('svg1').clientHeight;
 
-var marginLeft = 100;
-var marginTop = 100;
+var marginLeft = 0;
+var marginTop = 0;
 
 var svg = d3.select('svg')
     .append('g')
     .attr('transform', 'translate(' + marginLeft + ',' + marginTop + ')');
 
+var albersProjection = d3.geoAlbersUsa()
+    .scale(700)                           //tell it how big the map should be
+    .translate([(width/2), (height/2)]);  //set the center of the map to show up in the center of the screen
 
-//import the data from the .csv file
-d3.csv('./incomeData.csv', function(dataIn){
+//set up the path generator function to draw the map outlines
+path = d3.geoPath()
+    .projection(albersProjection);
 
+//import the data from the .json file
+d3.json('./cb_2016_us_state_20m.json', function(dataIn){
+    svg.selectAll("path")               //make empty selection
+        .data(dataIn.features)          //bind to the features array in the map data
+        .enter()
+        .append("path")                 //add the paths to the DOM
+        .attr("d", path)                //actually draw them
+        .attr("class", "feature")
+        .attr('fill','lightgray')
+        .attr('stroke','white')
+        .attr('stroke-width',.2);
+
+    svg.selectAll('circle1')
+        .data([{long:-74.0060, lat:40.7128}])       //bind a single data point, with the long lat of Boston
+        //note that long is negative because it is a W long point!
+        .enter()
+        .append('circle')
+        .attr('cx', function (d){
+            return albersProjection([d.long, d.lat])[0]
+        })
+        .attr('cy', function (d){
+            return albersProjection([d.long, d.lat])[1]
+        })
+        .attr('r', 5)
+        .attr('fill','salmon')
+
+    svg.selectAll('circle2')
+        .data([{long:-71.0589, lat:42.3601}])       //bind a single data point, with the long lat of Boston
+        //note that long is negative because it is a W long point!
+        .enter()
+        .append('circle')
+        .attr('cx', function (d){
+            return albersProjection([d.long, d.lat])[0]
+        })
+        .attr('cy', function (d){
+            return albersProjection([d.long, d.lat])[1]
+        })
+        .attr('r', 5)
+        .attr('fill','darkseagreen')
 
 });
 

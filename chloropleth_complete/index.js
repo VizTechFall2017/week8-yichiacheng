@@ -17,7 +17,7 @@ var albersProjection = d3.geoAlbersUsa()  //tell it which projection to use
 path = d3.geoPath()
     .projection(albersProjection);        //tell it to use the projection that we just made to convert lat/long to pixels
 
-var stateLookup = d3.map();
+var stateLookup = d3.map(); //check library(lookup table) to get information>connection name and value
 
 var colorScale = d3.scaleLinear().range(['white','blue']);
 
@@ -28,11 +28,11 @@ queue()
 
 
     populationData.forEach(function(d){
-        stateLookup.set(d.name, d.population);
+        stateLookup.set(d.name, d.population);//set: what this library's entry should be
     });
 
 
-    colorScale.domain([0, d3.max(populationData.map(function(d){return +d.population}))]);
+    colorScale.domain([0, d3.max(populationData.map(function(d){return +d.population}))]);//set color scale to match pop data and reflect on map
 
     svg.selectAll("path")               //make empty selection
         .data(mapData.features)          //bind to the features array in the map data
@@ -41,7 +41,7 @@ queue()
         .attr("d", path)                //actually draw them
         .attr("class", "feature")
         .attr('fill',function(d){
-            return colorScale(stateLookup.get(d.properties.NAME));
+            return colorScale(stateLookup.get(d.properties.NAME));//fill in the color in scale according the properties of each state data
         })
         .attr('stroke','white')
         .attr('stroke-width',.2);
