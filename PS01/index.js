@@ -22,7 +22,7 @@ path = d3.geoPath()
 
 
 var stateLookup = d3.map(); //check library(lookup table) to get information>connection name and value
-var colorScale = d3.scaleLinear().range(['white','red']);
+var colorScale = d3.scaleLinear().range(['black','blue']);
 
 queue()
     .defer(d3.json, "./Boston_Neighborhoods.json")
@@ -31,7 +31,7 @@ queue()
 
 
         rentData.forEach(function(d){
-            stateLookup.set(d.neighborhood, d.rent);//set: what this library's entry should be
+            stateLookup.set(d.name, d.rent);//set: what this library's entry should be
         });
 
 
@@ -44,10 +44,10 @@ queue()
             .attr("d", path)                //actually draw them
             .attr("class", "feature")
             .attr('fill',function(d){
-                return colorScale(stateLookup.get(d.properties.neighborhood));//fill in the color in scale according the properties of each state data
+                return colorScale(stateLookup.get(d.properties.NAME));//fill in the color in scale according the properties of each state data
             })
             .attr('stroke','white')
-            .attr('stroke-width',.5);
+            .attr('stroke-width',3);
 
     });
 
