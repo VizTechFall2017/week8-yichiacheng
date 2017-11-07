@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98ee66b9-5254-438a-a0c1-ed019d50b35c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/Boston_Neighborhoods.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/bostonneighborhoods.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/brent2017.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/cb_2016_us_state_20m.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/d3.v4.2.6.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/queue.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index.html" afterPath="$PROJECT_DIR$/PS01/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,31 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PS02/index.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PS05/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="216">
+              <caret line="124" column="88" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="124" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PS05/index.html">
+        <entry file="file://$PROJECT_DIR$/PS01/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1592">
-              <caret line="134" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PS02/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="285">
+              <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -84,12 +65,12 @@
         <option value="$PROJECT_DIR$/chloropleth_complete/boston_neighborhoods.json" />
         <option value="$PROJECT_DIR$/PS02/boston_neighborhoods.json" />
         <option value="$PROJECT_DIR$/PS02/bostonneighborhoods.json" />
-        <option value="$PROJECT_DIR$/PS01/index.html" />
         <option value="$PROJECT_DIR$/PS01/style.css" />
         <option value="$PROJECT_DIR$/chloropleth_complete/index.js" />
         <option value="$PROJECT_DIR$/PS01/index.js" />
         <option value="$PROJECT_DIR$/PS02/index.html" />
         <option value="$PROJECT_DIR$/PS02/index.js" />
+        <option value="$PROJECT_DIR$/PS01/index.html" />
       </list>
     </option>
   </component>
@@ -140,7 +121,7 @@
             <path>
               <item name="week8-yichiacheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="week8-yichiacheng" type="462c0819:PsiDirectoryNode" />
-              <item name="PS02" type="462c0819:PsiDirectoryNode" />
+              <item name="PS01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="week8-yichiacheng" type="b2602c69:ProjectViewProjectNode" />
@@ -187,12 +168,12 @@
       <workItem from="1509975223698" duration="5522000" />
       <workItem from="1510072436398" duration="269000" />
       <workItem from="1510073146720" duration="741000" />
-      <workItem from="1510080421307" duration="342000" />
+      <workItem from="1510080421307" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13918000" />
+    <option name="totallyTimeSpent" value="14126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -418,7 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/index.html" />
     <entry file="file://$PROJECT_DIR$/PS01/style.css" />
     <entry file="file://$PROJECT_DIR$/chloropleth_complete/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -464,8 +444,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PS05/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1592">
-          <caret line="134" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+        <state relative-caret-position="216">
+          <caret line="124" column="88" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="124" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
           <folding />
         </state>
       </provider>
